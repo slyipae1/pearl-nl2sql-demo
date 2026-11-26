@@ -1,0 +1,31 @@
+# Credentials / local configuration
+.env
+.env.*
+*.key
+*.pem
+
+# Raw source staging and internal review material (never publish)
+pearl-nl2sql-demo-src/
+docs/
+review-docs/
+.internal/
+
+# Real databases, indexes, logs and generated artifacts
+data/
+*.db
+*.sqlite
+*.sqlite3
+!examples/synthetic_demo.sqlite
+*.pkl
+*.pickle
+*.log
+logs/
+temp_exec/
+.gradio/
+__pycache__/
+*.py[cod]
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
